@@ -1,0 +1,1 @@
+console.log("hej från one.js"),console.log("hej från two.js");

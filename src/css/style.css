@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(162, 170, 172);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 5em;
+    background-color: rgb(93, 110, 118);
+}
+
+h1{
+    margin-left: 40%;
+    margin-top: 10%;
+}
+h2{
+    margin-left: 10%;
+    margin-top: 5%;
+    font-size: 25px;
+}
+p{
+    margin-left: 10%;
+    margin-right: 20%;
+    font-size: 20px;
+}
+footer{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+footer p{
+   margin-left: 38%;
+}

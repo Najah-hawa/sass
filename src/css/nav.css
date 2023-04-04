@@ -1,0 +1,20 @@
+.nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+.nav-menu li {
+    list-style: none;  
+     color: rgb(215, 219, 223);
+       font-weight: 600; 
+       font-family:'Times New Roman', Times, serif;
+    font-size: 1.2em;
+     text-transform: uppercase;
+}
+
+

@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-gulp",
+  "version": "1.0.0",
+  "description": "moment1-gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.1",
+    "gulp": "^4.0.2",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-terser": "^2.1.0"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.1"
+  }
+}

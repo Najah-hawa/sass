@@ -1,45 +1,84 @@
 
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moment 1- Gulp</title>
-    <link href="./css/main.css" type="text/css" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav class="nav-menu">
-            <ul>
-                <li>Moment 1- DT173G</li>
-                <li>Najah Hawa</li>
+    <!DOCTYPE html>
+    <html lang="sv">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Moment 1- Gulp</title>
+        <link href="./css/sass.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="topnav">
+                <a href="#" id="active" class="active">DT173G</a>
+                <div id="myLinks">
+                <a href="#">Startsida</a>
+                <a href="#">Nyheter</a>
+                <a href="#">Mina sidor</a>
+                <a href="#">Om oss</a>
+                <a href="#">Kontakt</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+            </div>
+   
+                
+        </header>   
+    <main> 
+
+
+
+            <div class="container">
+                <h1 class="h1"> Barn uppfostran</h1>
+        <p class="text"> Barnets föräldrar har huvudansvaret för barnets uppfostran och utveckling och ska hjälpa barnet att få det som barnet har rätt til </p>
         
-            </ul>
-        </nav>
-    </header>
-   <main> 
-
-    <div class="content">
-        <h1> Moment 1-Gulp  </h1>
-      <h2>Vad automatiserings-processens syfte är.</h2>
-      <p> 
-Syftet med automatiserings-processens är att göra filer redo för att publiceras genom att minska filstorlekar och minimerar dem. Detta görs genom att ta bort kommentarer och onödiga tecken. Dessutom kan det minimera bilder och komprimerar dem för att filstorleken ska vara mindre. Den används också för att slå ihop olika css/js filer för webbläsare ska laddas snabbare.</p>
-	<h2>Anger om vilka paket och verktyg du använt, och varför du valt just dessa.</h2>
-<p> Jag använder visual studi code som utveckling miljö. Jag har använd node js npm och gulp. 
-Node.js är en plattform som finns som öppen källkod som går att installera på dator eller på en server.
-Npm är ett pakethanteringssystem som är standard för Node.js och följer med när Node.js installeras.
-Gulp är en task runner som kör våra olika processer för att göra källkodsfiler redo för publicering.</p>
-<h2>Beskriv systemet du skapat, hur man startar upp det och de tasks som ingår.</h2>
-<p> Jag har skapat en grundstruktur för projekt. Genom gulp kan alla förändringar som gjorts i sidan spåras och uppdateras direkt i publicering filen. Det gäller html/css/js/images filer. Det kan också minimera js och css kod och slå ihop olika css filer samt olika js filer ihop för att bli en fil i publicering filen. </p>
-<h2>Ta även med om du lagt till något extra.</h2>
-<p> Jag har lagt till en task för att kombinera bilder. Den bild som används har dock inte kombinerat men tanken är att ifall jag ska ha bilder så är det bra task att ha. </p>
-
-    </div>
-    <script src="js/main.js"> </script>
-</main>
-<footer> 
-   <p>  © COPYRIGHT för Najah Hawa</p>
-</footer>
-</body>
-</html>
+        
+        
+        
+                <section id="bilder">
+                    <h1 class="h">Barn i olika åldrar</h1> 
+            <div> 
+            <div class="content"> 
+            <div class="foto">
+                <img src="./images/bild1.png" alt="bild av ett barn som är tre år gammal" class="img">
+            <p> Ett barn under 1 år  </p>
+            </div>
+            <div> 
+            <p class="info"> Barn under 1 år behöver stor energi av sina föräldrar. De ska se till att han äter bra, soverr bra, bor i trygg miljö och tvecklas bra. </p>
+            </div>
+            </div>  
+        </div>  
+            <div class="content"> 
+                <div class="foto-girl">
+                    <img src="./images/bild2.png" alt="bild av ett barn som är tre och en halv år gammal " class="img">
+                <p> Ett barn under 5 år  </p>
+                </div>
+                <div> 
+                <p class="info"> I denna tid barnen är uppmärksamma och upptäcker sin omvärld. De tycker om att fråga, disktuera och uttrycka sina åsikter. </p>
+                </div>
+            </div>
+                <div class="content"> 
+                    <div class="foto-girl">
+                    <img src="./images/bild3.png" alt="bild av ett barn som är tio år gammal " class="img">
+                    <p> Ett barn under 10 år </p>
+                    </div>
+                    <div> 
+                    <p class="info"> Barnen förstår omvärlden och de börjar att skapa vänskaprelationer. De börjar ansvarar för olika saker och fatta besult.</p>
+                    </div>   
+                </div>
+                </section>
+                <script src="js/main.js"> </script>
+        
+        
+            </div>
+        
+        </main> 
+    <footer> 
+        <p>  © COPYRIGHT för Najah Hawa</p>
+    </footer>
+    </body>
+    </html>

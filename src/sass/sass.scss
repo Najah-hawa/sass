@@ -1,0 +1,91 @@
+@import  "basic";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}
+.container{
+background-color: $light-navcolor;
+padding-bottom: 200px;
+}
+
+.topnav {
+    background-color: $navcolor;
+    overflow:visible;
+    height: 100px;
+
+}
+.topnav a {
+    color: $primary-color;
+    padding: 40px 20px;
+    text-decoration: none;
+    font-size: $font-size;
+    float: right;
+}
+.topnav a.icon {
+    display: none;
+}
+#myLinks {
+    display: block;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+// mixin 
+.h1{
+  @include titel;
+  font-size: 35px;
+      }
+.h{
+   @include titel;
+   font-size: 25px;
+}
+.foto{
+  @include fotobox ($gender: true);
+
+}
+
+.img {
+  @include img;
+}
+.text {
+  @include text;
+}
+.info{
+  @extend .text;
+  padding-top: 10%;
+  float: left;
+}
+
+//Nesting.
+.foto{
+  p{
+    padding-left: 25%;
+    font-size: $font-mobil;
+  }
+}
+
+
+
+
+.foto-girl{
+  @include fotobox ;
+  @extend .foto;
+}
+footer{
+  height: 60px;
+  background-color: $navcolor;
+}
+footer p{
+  font-size: $font-size;
+  text-align: center;
+  padding-top: 20px;
+}
+
+@import  "media";
+  

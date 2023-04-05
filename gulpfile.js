@@ -15,6 +15,12 @@ const imagemin = require('gulp-imagemin');
 //live server
 const browserSync = require('browser-sync').create();
 
+//konvetera sass 
+const sass = require('gulp-sass')(require('sass'));
+
+// sourscemaps 
+const sourcemaps = require('gulp-sourcemaps');
+
 
 
 // sökvägar till html/css och js filer 
@@ -23,6 +29,7 @@ htmlPath : "src/**/*.html",
 cssPath :"src/css/*.css",
 jsPath :"src/js/*.js",
 imagePath :"src/images/*",
+sassPath :"src/sass/*.scss",
 }
 
 //html task, kopiera filer 
@@ -56,6 +63,14 @@ function imagesTask(){
     .pipe(dest('pup/images'));
 }
 
+//Task sass
+function sassTask() {
+    return src(files.sassPath)
+        .pipe(sourcemaps.init())
+        .pipe(sass().on("error", sass.logError))
+        .pipe(dest('pup/css'))
+        .pipe(browserSync.stream());
+}
 
 //watch-task 
 function watchTask(){
@@ -63,12 +78,12 @@ function watchTask(){
       server: "./pup"
    });
 
-watch ([files.htmlPath, files.cssPath, files.jsPath, files.imagePath ], parallel(copyHTML,cssTask,jsTask,imagesTask)).on('change', browserSync.reload);
+watch ([files.htmlPath, files.cssPath, files.jsPath, files.imagePath, files.sassPath], parallel(copyHTML,cssTask,jsTask,imagesTask,sassTask)).on('change', browserSync.reload);
 }
 
 
 exports.default = series(  
-parallel(copyHTML,cssTask,jsTask,imagesTask), 
+parallel(copyHTML,cssTask,jsTask,imagesTask,sassTask ), 
 watchTask
 )
 

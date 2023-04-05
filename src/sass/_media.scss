@@ -1,0 +1,124 @@
+@media screen and (max-width: 1300px){
+    .img {
+        width: 150px;
+        margin-left: 10%;
+    }
+    .foto{
+        p{
+          padding-left: 20%;
+          padding-top: 20px;
+        }
+      }
+      .foto{
+        margin-left: 150px;
+      
+      }
+}
+@media screen and (max-width: 1100px){
+    .img {
+        width: 130px;
+        margin-left: 8%;
+    }
+    .foto{
+        p{
+          padding-left: 15%;
+        }
+      }
+}
+@media screen and (max-width: 1000px){
+    .img {
+        width: 130px;
+        margin-left: 5%;
+    }
+    .foto{
+        p{
+          padding-left: 0%;
+        }
+      }
+}
+@media screen and (max-width: 900px){
+    .img {
+        width: 130px;
+        margin-left: 0%;
+    }
+    .foto p, .foto-girl p {
+        padding-left: 20%;
+        padding-top: 10px;
+    }
+    .foto{
+        margin-left: 100px;
+      }
+}
+
+
+
+
+@media screen and (max-width: 600px){
+
+
+    .topnav {
+      overflow: hidden;
+      background-color: $navcolor;
+      position: relative;
+      height: auto;
+    }
+    
+    .topnav #myLinks {
+      display: none;
+    }
+    
+    .topnav a {
+      color: $primary-color;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: $font-mobil;
+      display: block;
+      float: none;
+    }
+    
+    .topnav a.icon {
+      background: black;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0px;
+    }
+    .active {
+      background-color: $dark-navcolor;
+    }
+    #active {
+      color:black;
+    }
+    .content{
+        display: block;
+        margin-bottom: 150px;
+    }
+    .info {
+      padding-top: 0%;
+    }
+    .img {
+        margin-left: 25%;
+    }
+    .container{
+        padding-bottom: 50px;
+    }
+    .info{
+      font-size: $font-mobil;
+      }
+      .text{
+        font-size: $font-mobil;
+        }
+      .h1 {
+      font-size: 25px;
+    }
+    footer p {
+        font-size: $font-mobil;
+ 
+    }
+    }
+    @media screen and (max-width: 500px){
+        .foto{
+            margin-left: 10%;
+            width: 80%;
+          }
+    }

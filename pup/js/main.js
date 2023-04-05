@@ -1,1 +1,1 @@
-console.log("hej från one.js"),console.log("hej från two.js");
+function myFunction(){var l=document.getElementById("myLinks");"block"===l.style.display?l.style.display="none":l.style.display="block"}console.log("hej från two.js");
